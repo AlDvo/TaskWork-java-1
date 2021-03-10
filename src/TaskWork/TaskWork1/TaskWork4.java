@@ -10,21 +10,22 @@ public class TaskWork4 {
 
         int a = one.nextInt();
 
-        Scanner two = new Scanner(System.in);
+
         System.out.println("Введите второе число");
 
-        int b = two.nextInt();
+        int b = one.nextInt();
 
-        Scanner three = new Scanner(System.in);
+
         System.out.println("Введите третье число");
 
-        int c = three.nextInt();
+        int c = one.nextInt();
 
-        int d = (a + b + c )/ 2;
+        int d = (a + b + c )/ 3;
         System.out.println("Среднее арифметическое трех числе " + d);
 
         if(d/2 > 3){
             System.out.println("Программа выполнена корректно");
         }
+        one.close();
     }
 }
