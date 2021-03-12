@@ -5,20 +5,23 @@ public class TaskWork7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите размер массива:");
-        int i = scanner.nextInt();
-        int[] mass = new int[i];
-        for(i=0 ; i < mass.length ; i++){
+        int a = scanner.nextInt();
+        int[] mass = new int[a];
+        for(int i =0 ; i < mass.length ; i++){
             System.out.println("Введите данные массива:");
-            int a = scanner.nextInt();
-            mass[i]=a;
+            int b = scanner.nextInt();
+            mass[i]=b;
         }
         int x = 30;
         int y = 12;
         int z = 2;
-        for(i = 0 ; i < mass.length ; i++){
+        int n = 0;
+        for(int i = 0 ; i < mass.length ; i++){
          if (mass[i]==x | mass[i]==y | mass[i]==z){
-             System.out.println("Данное значение имеется в константах");
+             n++;
          }
         }
+        if (n > 1){
+            System.out.println("Данное значение имеется в константах");}
     }
 }
