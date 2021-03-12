@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class TaskWork7 {
     public static void main(String[] args) {
+        //Пользователь вводит размер массива и данные с клавиатуры в массив
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите размер массива:");
         int a = scanner.nextInt();
@@ -12,6 +13,7 @@ public class TaskWork7 {
             int b = scanner.nextInt();
             mass[i]=b;
         }
+        //Сравнить элементы массива с заранее заданными константами x, y, z.
         int x = 30;
         int y = 12;
         int z = 2;
@@ -21,7 +23,9 @@ public class TaskWork7 {
              n++;
          }
         }
+        //Если массив содержит хотя бы одну из констант, вывести текст "Данное значение имеется в константах".
         if (n > 1){
             System.out.println("Данное значение имеется в константах");}
+        scanner.close();
     }
 }
