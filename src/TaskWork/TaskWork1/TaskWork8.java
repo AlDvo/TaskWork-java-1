@@ -15,6 +15,7 @@ public class TaskWork8 {
             }
         }
         System.out.println("Сумма всех нечетных чисел: " + b);
+        scanner.close();
     }
     }
 
