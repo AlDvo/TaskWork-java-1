@@ -10,15 +10,19 @@ public class TaskWork12 {
         boolean a1 = java.contains("Java");
         boolean a2 = java.startsWith("I like");
         boolean a3 = java.endsWith("!!!");
+
+        //Если 3 предыдущих условия верны, выведите данную строку, преобразованную к верхнему регистру.
         if (a1 == true && a2 == true && a3 == true ){
             String java1 = java.toUpperCase();
             System.out.println(java1);
 
+            //Замените все символы ‘a’ на ‘о’ и введите подстроку “Jovo” на экран  (используйте substring()).
             String java2 = java.replace("a","o");
             String java3 = java2.substring(7);
             System.out.println(java3);
         } else {
             System.out.println("Вы ввели текст неправильно");
         }
+        scanner.close();
     }
 }
