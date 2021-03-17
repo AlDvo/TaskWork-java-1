@@ -8,12 +8,15 @@ public class TaskWork13 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите текст ");
         String a = scanner.nextLine();
-        Pattern pattern = Pattern.compile("[a-zA-Z[\\s]]*");
-        Matcher matcher = pattern.matcher(a);
+        String[] massiv = a.split(" ");
         int num = 0;
-        while (matcher.find()){
-            System.out.print(matcher.group());
-            num ++;
+        for(int i = 0 ; i < massiv.length ; i++) {
+            Pattern pattern = Pattern.compile("[a-zA-Z]");
+            Matcher matcher = pattern.matcher(massiv[i]);
+            while (matcher.find()) {
+                System.out.println(massiv[i].substring(matcher.start(), matcher.end()));
+                num++;
+            }
         }
         System.out.println( "\nКоличество слов: " + num);
         scanner.close();
