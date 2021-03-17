@@ -11,14 +11,15 @@ public class TaskWork13 {
         String[] massiv = a.split(" ");
         int num = 0;
         for(int i = 0 ; i < massiv.length ; i++) {
-            Pattern pattern = Pattern.compile("[a-zA-Z]");
+            Pattern pattern = Pattern.compile("[a-zA-Z]\\w*");
             Matcher matcher = pattern.matcher(massiv[i]);
-            while (matcher.find()) {
-                System.out.println(massiv[i].substring(matcher.start(), matcher.end()));
+            boolean found = matcher.matches();
+            if (found){
+                System.out.println(massiv[i]);
                 num++;
             }
         }
-        System.out.println( "\nКоличество слов: " + num);
+        System.out.println( "Количество слов: " + num);
         scanner.close();
     }
 }
