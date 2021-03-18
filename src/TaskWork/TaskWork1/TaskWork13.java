@@ -11,7 +11,7 @@ public class TaskWork13 {
         String[] massiv = a.split(" ");
         int num = 0;
         for(int i = 0 ; i < massiv.length ; i++) {
-            Pattern pattern = Pattern.compile("[a-zA-Z]\\w*");
+            Pattern pattern = Pattern.compile("[a-zA-Z]+");
             Matcher matcher = pattern.matcher(massiv[i]);
             boolean found = matcher.matches();
             if (found){
