@@ -25,7 +25,7 @@ public class TaskWork14 {
         //Из максимального и минимального значения выведите наибольшее по модулю.
         if (Math.abs(max) > Math.abs(min)) {
             System.out.println("Из максимального и минимального значения выведите наибольшее по модулю " + Math.abs(max));
-        }else if (Math.abs(max) <= Math.abs(min)) {
+        }else {
         System.out.println("Из максимального и минимального значения выведите наибольшее по модулю " + Math.abs(min));
         }
     }
