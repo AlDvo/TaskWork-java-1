@@ -6,10 +6,8 @@ public class TaskWork8 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число n");
         int a = scanner.nextInt();
-        int[] mass = new int[a];
         int b = 0;
-        for(int i = 0 ; i < a ; i ++){
-            mass[i] = i;
+        for(int i = 0 ; i <= a ; i ++){
             if( i % 2 == 1){
                 b += i;
             }
